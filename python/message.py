@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 import re
 import sqlite3
 
-DATABASE_NAME = 'message.db'
+DATABASE_NAME = 'database/message.db'
 app = Flask(__name__)
 
 # دالة لإدخال السجل في قاعدة البيانات
