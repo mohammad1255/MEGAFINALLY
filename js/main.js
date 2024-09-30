@@ -558,7 +558,7 @@ bot.on('callback_query', (query) => {
 
         break;
       case 'cash_payment':
-        bot.sendMessage(chatId, (language == 'ar') ? 'يرجى إرسال رقم عملية التحويل الخاصة بك.' : 'Please send your transfer number.', {
+        bot.sendMessage(chatId, (language == 'ar') ? 'يرجى إرسال رقم عملية التحويل الخاصة بك إلى الرقم 61701272' : 'Please send your transfer number to Number 61701272', {
           reply_markup: {
             inline_keyboard: [
               [{ text: (language === 'ar') ? '⬅️ العودة إلى السابق' : '⬅️ Back', callback_data: 'recharge_balance' }]
@@ -628,10 +628,10 @@ bot.on('callback_query', (query) => {
         handleNetworkSelection('BEP20', chatId, userId, language);
         break;
       case 'TRC20':
-        bot.sendMessage(chatId, (language == 'ar') ? 'يرجى إرسال رقم عملية التحويل على عنوان TRC20: TXk5h6k3JfMkZ3xH3skKbF7FR9m9TwhJLh' : 'Please send the transaction ID for TRC20 to this address: TXk5h6k3JfMkZ3xH3skKbF7FR9m9TwhJLh', {
+        bot.sendMessage(chatId, (language == 'ar') ? 'يرجى إرسال رقم عملية التحويل على عنوان TRC20: TBhMpbSRuAnWuJZezMdN2wUzGMc93k8xqU' : 'Please send the transaction ID for TRC20 to this address: TBhMpbSRuAnWuJZezMdN2wUzGMc93k8xqU', {
           reply_markup: {
             inline_keyboard: [
-              [{ text: (language === 'ar') ? '⬅️ العودة إلى السابق' : '⬅️ Back', callback_data: 'CoinEx' }]
+              [{ text: (language === 'ar') ? '⬅️ العودة إلى السابق' : '⬅️ Back', callback_data: 'logout' }]
             ]
           }
         });
